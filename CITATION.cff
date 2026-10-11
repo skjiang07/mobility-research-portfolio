@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "For research findings, cite the papers linked in each project README. This citation identifies the portfolio only."
+title: "Mobility Research Portfolio"
+type: software
+authors:
+  - family-names: Jiang
+    given-names: Shangkun
+repository-code: "https://github.com/skjiang07/mobility-research-portfolio"
+abstract: "Selected original transportation and mobility research code, documentation, and clearly labeled synthetic demonstrations. Not a full empirical replication package."
