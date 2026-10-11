@@ -10,7 +10,7 @@ I carried out the hands-on work in these projects end to end, including data pre
 | --- | --- | --- |
 | [GTFS traffic monitoring](projects/gtfs-traffic-monitoring/) | Transportation Research Record, 2025 | Original GIS/travel-time notebooks; synthetic corridor demo |
 | [Hurricane Ian traffic impacts](projects/hurricane-ian-traffic/) | International Journal of Disaster Risk Reduction, 2026 | Original metric helpers; synthetic regression discontinuity example |
-| [Wildfire evacuation](projects/wildfire-evacuation/) | Transportation Research Part D, 2026 | Published-methods explanation and synthetic evacuation metrics |
+| [Wildfire evacuation](projects/wildfire-evacuation/) | Transportation Research Part D, 2026 | Original population, OD geometry and demographic overlay functions; synthetic examples |
 | [Mobility-data representativeness](projects/mobility-data-bias/) | Submitted manuscript | Original sampling/spatial functions; synthetic bias assessment |
 | [GeoAI activity inference](projects/geoai-activity-inference/) | Accepted full research paper, ACM GeoAI 2026 | Original Transformer, segment evaluation and context functions; synthetic demo |
 
