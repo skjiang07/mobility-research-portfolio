@@ -12,3 +12,13 @@ jobs:
       - run: python scripts/verify_portfolio.py
       - run: python scripts/run_demos.py
       - run: python scripts/run_checks.py
+  wildfire-original-spatial:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r projects/wildfire-evacuation/requirements.txt -r projects/wildfire-evacuation/requirements-original-spatial.txt
+      - run: python projects/wildfire-evacuation/demo/original_source_example.py
+      - run: python -m unittest discover -s projects/wildfire-evacuation/tests -p test_original_source.py -v
