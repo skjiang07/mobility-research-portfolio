@@ -6,7 +6,7 @@ This release is a research portfolio of selected source excerpts and synthetic e
 | --- | --- | --- |
 | GTFS | Historical transit feeds, road/stops/intersection geometry, independent comparison observations and configuration | Curated notebook cells and an artificial straight-corridor demo |
 | Hurricane Ian | Authorized mobility data, detector observations, segment geometry, weather and final modeling configuration | Original metric helpers and a new synthetic model illustration |
-| Wildfire | Authorized Facebook population/movement aggregates, GPS data and disaster/land-use layers | New implementation of selected published equations on invented tables |
+| Wildfire | Authorized Facebook population/movement aggregates, GPS data and disaster/land-use layers | Original population and spatial functions exercised on invented tables, plus a separate published-metrics example |
 | Mobility bias | Authorized provider records, residence inference, Census and residential geography | Original metric functions and artificial counts/point patterns |
 | GeoAI | Authorized trajectories/labels, preprocessing, split definitions, training settings and model artifacts | Original model/evaluation/context functions and invented segment inputs |
 
