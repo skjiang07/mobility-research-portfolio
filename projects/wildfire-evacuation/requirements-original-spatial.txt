@@ -1,0 +1,4 @@
+# Optional dependencies for the preserved OD and demographic-overlay functions.
+# Install alongside the project requirements.txt.
+geopandas>=1,<2
+shapely>=2,<3
