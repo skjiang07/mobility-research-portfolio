@@ -1,0 +1,204 @@
+{
+  "description": "Original research figures and author manuscripts. This inventory records sources and file identity; it does not establish empirical replication.",
+  "assets": [
+    {
+      "path": "assets/dissertation-overview.png",
+      "kind": "research_figure",
+      "sha256": "8fe4cd4bb1ce943919055219954d7a0c83284fcd9c421a3fb6a73c394daf1645",
+      "source": {
+        "archive": "Shangkun_dissertation_completed.zip",
+        "member": "figures/ch1/dissertation_overview.png"
+      },
+      "transformation": "None; unchanged original PNG"
+    },
+    {
+      "path": "manuscripts/geoai-act-accepted-manuscript.pdf",
+      "kind": "author_manuscript",
+      "sha256": "6249a2bf7a8c677f9a7720ed219a0fb4343c940bae7c568dc653bdf5d2aba414",
+      "source": {
+        "filename": "GeoAI26_paper_5.pdf",
+        "study": "GeoAI-Act"
+      },
+      "status": "Accepted author manuscript; publisher metadata in template are placeholders",
+      "transformation": "None; unchanged original PDF"
+    },
+    {
+      "path": "manuscripts/mobility-bias-author-manuscript.pdf",
+      "kind": "author_manuscript",
+      "sha256": "302c6f9279bb36f5f2c01457d88235a25f89e6e7334e7bf1de2c79028d2262ac",
+      "source": {
+        "archive": "PNAS_Main.zip",
+        "member": "Research_report.tex",
+        "author_metadata_source": "Same-title August 2026 author manuscript, Research_report.tex"
+      },
+      "status": "Unpublished draft author manuscript; not a publisher version of record",
+      "transformation": "Compiled with Tectonic 0.17.0. Scientific text and figures retained; template author metadata replaced with exact author/affiliation/contribution/declaration/contact information from the same-title August source; spurious template equal-contribution line removed.",
+      "pages": 14
+    },
+    {
+      "path": "projects/geoai-activity-inference/assets/geoai-act-framework.png",
+      "kind": "research_figure",
+      "sha256": "470abae8fe10f50695fdd34739e6b780e22b31389bfe18723b9357fd0d9f33f0",
+      "source": {
+        "folder": "GeoAI-Act research paper figures",
+        "filename": "Figure_Framework.png",
+        "manuscript_figure": 1
+      },
+      "transformation": "None; unchanged original PNG"
+    },
+    {
+      "path": "projects/geoai-activity-inference/assets/inferred-purpose-distribution-and-duration.png",
+      "kind": "research_figure",
+      "sha256": "885634f0222c8a35352f87d31d2d8f5926961267731ae3fa7b428304899c4d72",
+      "source": {
+        "folder": "GeoAI-Act research paper figures",
+        "filename": "Figure_Distribution and duration of inferred stay purposes.png",
+        "manuscript_figure": 3
+      },
+      "transformation": "None; unchanged original PNG"
+    },
+    {
+      "path": "projects/geoai-activity-inference/assets/inferred-versus-labeled-hourly-stays.png",
+      "kind": "research_figure",
+      "sha256": "6059ff294d664d310d904b264053b53842efe01d94f68428eeb14400eab4ccc8",
+      "source": {
+        "folder": "GeoAI-Act research paper figures",
+        "filename": "Figure_Average number of inferred and ground-truth stays per user by hour on weekdays and weekends.png",
+        "manuscript_figure": 5
+      },
+      "transformation": "None; unchanged original PNG"
+    },
+    {
+      "path": "projects/gtfs-traffic-monitoring/assets/gainesville-validation-corridors.png",
+      "kind": "research_figure",
+      "sha256": "e7b7878d8af596f36ca0ef75e87ca6ab5206bef6404f3645bcc498fea47434db",
+      "source": {
+        "archive": "Shangkun_dissertation_completed.zip",
+        "member": "figures/ch2/validation_segments.png"
+      },
+      "transformation": "None; unchanged original PNG",
+      "version": "Completed dissertation presentation version"
+    },
+    {
+      "path": "projects/gtfs-traffic-monitoring/assets/gtfs-speed-estimation-framework.png",
+      "kind": "research_figure",
+      "sha256": "aa153fa373305dd84064de8c0bd004cce0281b9cc304c8d0b85f62d07ece89dc",
+      "source": {
+        "archive": "Shangkun_dissertation_completed.zip",
+        "member": "figures/ch2/method_framework.png"
+      },
+      "transformation": "None; unchanged original PNG",
+      "version": "Completed dissertation presentation version"
+    },
+    {
+      "path": "projects/gtfs-traffic-monitoring/assets/segment-one-speed-comparison.png",
+      "kind": "research_figure",
+      "sha256": "864b1183ab56c0e8f2389118f001a99d6e1d38e16c67e0cc0aaed8f42c415e64",
+      "source": {
+        "archive": "Shangkun_dissertation_completed.zip",
+        "member": "figures/ch2/validation_seg1.png"
+      },
+      "transformation": "None; unchanged original PNG",
+      "version": "Completed dissertation presentation version"
+    },
+    {
+      "path": "projects/hurricane-ian-traffic/assets/evacuation-route-speed-estimation.png",
+      "kind": "research_figure",
+      "sha256": "c9892988fc63aefbe6cfa438801c5a44eab6c10e705d51ed0291def2e0015beb",
+      "source": {
+        "archive": "Shangkun_dissertation_completed.zip",
+        "member": "figures/ch4/sms_flowchart.png"
+      },
+      "transformation": "None; unchanged original PNG",
+      "version": "Completed dissertation presentation version"
+    },
+    {
+      "path": "projects/hurricane-ian-traffic/assets/evacuation-zone-heterogeneity.png",
+      "kind": "research_figure",
+      "sha256": "3413368bafdda68b8693b4c5a6c3cbc40034c53c67b886c110a5e1e2f20ac70d",
+      "source": {
+        "archive": "Shangkun_dissertation_completed.zip",
+        "member": "figures/ch4/zone_heterogeneity.png"
+      },
+      "transformation": "None; unchanged original PNG",
+      "version": "Completed dissertation presentation version"
+    },
+    {
+      "path": "projects/hurricane-ian-traffic/assets/order-cutoff-rdit-results.png",
+      "kind": "research_figure",
+      "sha256": "ac84b1e3ecd6f03836c38892a638f43077c2f5e5bdea32dc63963925bf1619dd",
+      "source": {
+        "archive": "Shangkun_dissertation_completed.zip",
+        "member": "figures/ch4/rdit_illustration.png"
+      },
+      "transformation": "None; unchanged original PNG",
+      "version": "Completed dissertation presentation version"
+    },
+    {
+      "path": "projects/mobility-data-bias/assets/population-spatial-representation.png",
+      "kind": "research_figure",
+      "sha256": "24209c379b145e39c37dbd463a777441b9aace7985dddd75150d6f32cbd82a7e",
+      "source": {
+        "archive": "Shangkun_dissertation_completed.zip",
+        "member": "figures/ch5/fig_dimensions.png"
+      },
+      "transformation": "None; unchanged original PNG",
+      "version": "Completed dissertation presentation version"
+    },
+    {
+      "path": "projects/mobility-data-bias/assets/representation-by-scale.png",
+      "kind": "research_figure",
+      "sha256": "4b1680f42ad68d508d239b2be04bb4c549ad1555c82c24a37939ec9ac255a866",
+      "source": {
+        "archive": "Shangkun_dissertation_completed.zip",
+        "member": "figures/ch5/fig_magnitude.png"
+      },
+      "transformation": "None; unchanged original PNG",
+      "version": "Completed dissertation presentation version"
+    },
+    {
+      "path": "projects/mobility-data-bias/assets/representation-correlates.png",
+      "kind": "research_figure",
+      "sha256": "320af4eec0e31700bb0f5c84785ab818be7d0e64d1a062c04b98c71bddd7c75c",
+      "source": {
+        "archive": "Shangkun_dissertation_completed.zip",
+        "member": "figures/ch5/fig_factors.png"
+      },
+      "transformation": "None; unchanged original PNG",
+      "version": "Completed dissertation presentation version"
+    },
+    {
+      "path": "projects/wildfire-evacuation/assets/analysis-framework.png",
+      "kind": "research_figure",
+      "sha256": "9de418ac9f5ca4a2e9dfff2d1016b7539286751238c004b6a3a5f91de7694ce8",
+      "source": {
+        "archive": "Shangkun_dissertation_completed.zip",
+        "member": "figures/ch3/framework.png"
+      },
+      "transformation": "None; unchanged original PNG",
+      "version": "Completed dissertation presentation version"
+    },
+    {
+      "path": "projects/wildfire-evacuation/assets/damage-displacement-disparity.png",
+      "kind": "research_figure",
+      "sha256": "09fc63338218c729a1ad6f8e021d889c168b18750ae6f00fe48de5ddf65b6aed",
+      "source": {
+        "archive": "Shangkun_dissertation_completed.zip",
+        "member": "figures/ch3/dedi_analysis.png"
+      },
+      "transformation": "None; unchanged original PNG",
+      "version": "Completed dissertation presentation version"
+    },
+    {
+      "path": "projects/wildfire-evacuation/assets/facebook-gps-comparison.png",
+      "kind": "research_figure",
+      "sha256": "2a856abce4834054a584c4ca2b0a56cd27c1b522de84afd4d6b6d2809c50a094",
+      "source": {
+        "archive": "Shangkun_dissertation_completed.zip",
+        "member": "figures/ch3/validate_rate.png"
+      },
+      "transformation": "None; unchanged original PNG",
+      "version": "Completed dissertation presentation version"
+    }
+  ]
+}
