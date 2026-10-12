@@ -8,6 +8,31 @@ Bus position feeds provide frequent observations on urban roads, but passenger s
 
 I carried out the hands-on workflow end to end: data collection and preparation, geospatial processing, travel-time algorithm implementation, validation, sensitivity analysis, visualization, and manuscript preparation. The paper retains its coauthor credits; these samples focus on my implementation.
 
+## Research highlights
+
+These are original figures from the research, reproduced from the readable PNG versions preserved in the completed dissertation archive. The reported findings use observed study data; the runnable demonstration below uses invented data.
+
+- The Gainesville workflow retained **1,061,207 observations (88.9% of the raw feed)** after preprocessing, with validation spanning five arterial, collector, and local-road segments in October 2023.
+- After calibration to Bluetooth travel times using an 80% training / 20% validation split, GTFS-based predictions had **lower RMSE in all five segments** and **lower MAPE in four of five** than the Google Traffic comparison.
+
+**From transit feeds to road-segment speed**
+
+<p align="center"><img src="assets/gtfs-speed-estimation-framework.png" alt="Original workflow connecting GTFS Static routes and stops with Realtime positions, stop-event detection, corrected travel time, and segment space-mean speed" width="760"></p>
+
+*Method figure.* Static routes and projected stops define the spatial buffers; Realtime observations supply bus movements. The workflow distinguishes a bus that passes a stop from a bus that dwells, then combines observed and imputed travel times before estimating space-mean speed.
+
+**Validation across different road types**
+
+![Original map of five Gainesville validation corridors, bus stops, intersections, and travel directions](assets/gainesville-validation-corridors.png)
+
+*Validation setting.* The five corridors cover arterials, collectors, and a local road, with segment lengths of 1.61–2.19 km and speed limits of 35–45 mph. Bluetooth, GTFS Realtime, and Google Traffic observations were aligned to the same segments and observation periods.
+
+**An original three-source comparison**
+
+![Original October 10 2023 speed time series for Segment 1 comparing GTFS Realtime, Bluetooth, and Google Traffic](assets/segment-one-speed-comparison.png)
+
+*Empirical result, Segment 1 on October 10, 2023.* The 30-minute series compare bus-based speed with Bluetooth and Google Traffic speed estimates, showing both within-day variation and the systematic speed gap between buses and general traffic. In the study's separate calibrated travel-time validation for this segment, MAPE was **8.24% for GTFS** and **12.27% for Google Traffic**.
+
 ## Code to review
 
 | File | What it demonstrates |
@@ -39,6 +64,6 @@ To review/run the notebooks with your own inputs, install `requirements-original
 
 ## Data and limitations
 
-Historical GTFS feeds, Bluetooth observations, Google Traffic observations, comparison workbooks, and original figures are excluded. Full reproduction requires the original data, geometry, collection dates, and complete analysis configuration. Missing observations, stop boundary speeds, incomplete trips, route coverage, CRS choice, and bus-specific behavior can affect estimates.
+Historical GTFS feeds, Bluetooth observations, Google Traffic observations, and comparison workbooks are excluded. The selected original research figures above are included as aggregate results and method illustrations. Full reproduction requires the original data, geometry, collection dates, and complete analysis configuration. Missing observations, stop boundary speeds, incomplete trips, route coverage, CRS choice, and bus-specific behavior can affect estimates.
 
 Original source notebooks: `Code/Travel Time Cal - V2-For use.ipynb` and `Code/SpaceMeanSpeed.ipynb`. The incomplete revision comparison notebook is not included. The portable demonstration does not reproduce the paper's numerical results.
