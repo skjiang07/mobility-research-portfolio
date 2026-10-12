@@ -6,6 +6,28 @@
 
 Emergency planners need to understand how population displacement, departure patterns, and destinations vary across fire-affected communities. This study develops an integrated framework using Facebook population and movement aggregates during the 2025 Palisades and Eaton fires, combines structural damage with displacement, and cross-checks selected patterns with an independent GPS dataset.
 
+## Research highlights
+
+These original figures are from the dissertation version of the published study. The framework is a method schematic; the maps and comparison panels report aggregate empirical results. The runnable examples later on this page use invented inputs.
+
+### From population and movement data to evacuation metrics
+
+![Original analysis framework connecting population, structural damage, and movement inputs to seven evacuation metrics](assets/analysis-framework.png)
+
+*Method schematic.* Baseline and crisis population counts produce displacement and departure metrics; structural damage adds the Damage-Evacuation Disparity Index (DEDI). Movement aggregates support OD, distance, and destination analysis. Values inside this diagram illustrate the calculations.
+
+### Where structural damage exceeded population displacement
+
+![Original DEDI map of the Palisades and Eaton fires with a comparison of area socioeconomic and wildfire risk characteristics](assets/damage-displacement-disparity.png)
+
+*Empirical result.* Higher DEDI values mark a larger gap between structural damage and population displacement. High values concentrate around the Eaton Fire, including West Altadena. The accompanying comparison shows higher average non-White population share, lower educational attainment, and higher wildfire risk in DEDI-identified areas. The study reports a positive association with the Social Vulnerability Index (**r = 0.563, p < 0.01**); DEDI describes an area-level mismatch rather than individual intent.
+
+### Independent GPS data show similar displacement patterns
+
+![Original comparison of Facebook and GPS displacement maps, tile-level correlation, and rate distributions](assets/facebook-gps-comparison.png)
+
+*External comparison.* Facebook and independent GPS estimates show similar spatial patterns and a positive tile-level correlation (**r = 0.752, p < 0.001**). Facebook estimates are slightly higher on average. This comparison supports the aggregate displacement pattern while showing that the two sources do not yield identical rates.
+
 ## My contribution
 
 I carried out the hands-on work end to end: data collection and preparation, geospatial processing, methodology implementation, software, analysis, validation, visualization, and manuscript preparation. The published paper retains its coauthor credits. Its contribution statement specifically credits me with software, methodology, data curation, formal analysis, validation, visualization, investigation, conceptualization, and writing.
@@ -75,4 +97,4 @@ The research uses approximately 2.4 km grid cells and 8-hour temporal intervals.
 
 ## Provenance
 
-The original excerpts come from the named notebook cells; their function definitions were checked against the source. Imports, example fixtures, behavior checks and documentation were added with coding-assistant support. The separate `evacuation_metrics_demo.py` was prepared from the published methodology, specifically Sections 3.1–3.3 and Eqs. (1)–(5). The paper's full coauthor list and source are available through the DOI above. Neither example reproduces the published empirical outputs.
+The research figures are unmodified author-source PNGs from dissertation Chapter 3; their captions and observations are condensed from the original figure captions and accompanying results. The original excerpts come from the named notebook cells; their function definitions were checked against the source. Imports, example fixtures, behavior checks and documentation were added with coding-assistant support. The separate `evacuation_metrics_demo.py` was prepared from the published methodology, specifically Sections 3.1–3.3 and Eqs. (1)–(5). The paper's full coauthor list and source are available through the DOI above. Neither example reproduces the published empirical outputs.
