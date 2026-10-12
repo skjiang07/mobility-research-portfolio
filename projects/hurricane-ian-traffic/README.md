@@ -6,6 +6,31 @@ This project examines changes in road-segment traffic speed and travel time reli
 
 **My role:** I am the first author and led the hands-on implementation of the research workflow, including data processing, methodology, software, statistical analysis, validation, visualization, and manuscript preparation. The study was a collaboration with the coauthors listed above; the code samples focus on my implementation work.
 
+## Research highlights
+
+These are original figures from the research, reproduced from the readable PNG versions preserved in the completed dissertation archive. The reported estimates use observed study data; the runnable model demonstration below uses an artificial panel.
+
+- In the baseline RDiT model with **7,139 segment-hour observations**, the September 27, 2022, 7 AM cutoff was associated with **14.9% lower space-mean speed** and **14.6% higher planning time index**. Both baseline coefficients were reported as significant at the 1% level.
+- Zone A had the largest zone-specific point estimates: **16.5% lower speed** and **21.1% higher planning time index**. The zone results show why a countywide average can hide concentrated disruptions near the coast.
+
+**From location observations to traffic metrics**
+
+<p align="center"><img src="assets/evacuation-route-speed-estimation.png" alt="Original method flowchart showing trip extraction, spatial matching to evacuation routes, point count and temporal gap screening, direction screening, and space-mean speed estimation" width="720"></p>
+
+*Method figure.* The workflow extracts trips, matches them to evacuation-route buffers, and screens their point count, time gaps, and direction. Eligible movements contribute total distance and total travel time to each segment's space-mean speed estimate.
+
+**Traffic changes at the order cutoff**
+
+![Original regression discontinuity figure showing space-mean speed and planning time index residuals around the evacuation order cutoff with polynomial trends and confidence bands](assets/order-cutoff-rdit-results.png)
+
+*Empirical model illustration.* Each point is an hourly aggregated residual after the study's controls and fixed effects; colored curves fit linear, quadratic, and cubic trends separately before and after the order, with 95% confidence bands. The dashed line marks issuance. This diagnostic visualization accompanies the baseline model estimates above; its vertical axes are residuals rather than speed in mph or percentage changes.
+
+**Differences across evacuation zones**
+
+![Original zone-specific coefficient chart for space-mean speed and planning time index with 95 percent confidence intervals](assets/evacuation-zone-heterogeneity.png)
+
+*Empirical heterogeneity result.* Blue circles represent coefficients for log(speed), red squares represent coefficients for log(planning time index), and bars show 95% confidence intervals. Zone A has the largest point estimates in both directions; the non-evacuation area has small estimates and wide intervals. The zone analysis uses the 7 AM cutoff for Zones A and B and the later 2 PM order for Zone C. Coefficients on this axis are converted to percentages with `100 * (exp(beta) - 1)`.
+
 ## Analytical workflow
 
 1. Infer trips and identify eligible movement through evacuation-route segments from mobile-device location data.
